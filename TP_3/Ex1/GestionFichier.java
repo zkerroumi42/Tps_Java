@@ -1,4 +1,4 @@
-package TP_3;
+package TP_3.Ex1;
 
 import java.io.File;
 import java.io.IOException;
@@ -106,8 +106,6 @@ public class GestionFichier {
         }
 
     }
-
-    // .lastModified().format().simpledateformat("")
     public static void main(String[] args) {
         GestionFichier GF=new GestionFichier("D:\\");
         GF.creeFichier("zakaria.txt");
