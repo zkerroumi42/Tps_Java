@@ -209,8 +209,6 @@ public class Gestion implements ActionListener {
             choice.select(0);
             lblshowurl.setText("");
             area.setText("");
-
-
         }
         if(e.getSource()==btnenregistrer){
             String nom=txtnom.getText()+"\n";
@@ -246,9 +244,9 @@ public class Gestion implements ActionListener {
                 out.write(comment.getBytes());
                 if (photourl != null) {
                     out.write(photourl.getBytes());
-
                 }
                 out.close();
+
             } catch (FileNotFoundException ex) {
                 throw new RuntimeException(ex);
             } catch (IOException ex) {
